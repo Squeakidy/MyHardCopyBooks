@@ -1,1 +1,27 @@
+h1 {
+  text-align: center;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+button {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid blue;
+  box-shadow: 5px 5px 2.5px grey;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 2px 2px 1px grey;
+}
+
+.container {
+  position: relative;
+  margin-top: 8%;
+}
