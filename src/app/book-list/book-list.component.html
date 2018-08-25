@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
   <div>
   <span class="h5">Search Genre: </span>
   <select>
@@ -6,7 +6,7 @@
     <option *ngFor="let g of genres" [value]="g.id">{{g.name}}</option>
   </select>
 </div>
-<div class="bookList">
+<div class="bookList content">
   <ul class="list-unstyled">
     <li *ngFor="let b of books">
       {{b.name}} - {{b.author}}

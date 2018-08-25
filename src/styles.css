@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-.container-fluid {
+body {
   background-color: lightblue;
-  height: 100%;
+}
+
+.content {
+  background-color: aliceblue;
+  border: 1px solid blue;
 }
