@@ -1,3 +1,18 @@
-<ul>
-  <li *ngFor="let b of books">{{b.name}}, {{b.author}}, {{b.genre}}</li>
-</ul>
+<div class="container">
+  <div>
+  <span class="h5">Search Genre: </span>
+  <select>
+    <option selected>Select Genre...</option>
+    <option *ngFor="let g of genres" [value]="g.id">{{g.name}}</option>
+  </select>
+</div>
+<div class="bookList content">
+  <ul class="list-unstyled">
+    <li *ngFor="let b of books">
+      {{b.name}} - {{b.author}}
+    </li>
+  </ul>
+</div>
+  </div>
+
+
