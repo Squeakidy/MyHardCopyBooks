@@ -2,5 +2,5 @@ export class Book {
     public id: string;
     public name: string;
     public author: string;
-    public genreId: number;
+    public genre: string;
 }

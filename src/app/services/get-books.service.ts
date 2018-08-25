@@ -8,7 +8,7 @@ import { Book } from '../models/book-model';
 })
 export class GetBooksService {
 
-  private apiUrl = "http://localhost:28627/api/book";
+  private apiUrl = "http://localhost:39654/api/books";
   constructor(private http: HttpClient) { }
 
   getBooks(): Observable<Book[]> {

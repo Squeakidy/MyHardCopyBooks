@@ -8,7 +8,7 @@ import { Genre } from '../models/genre-model';
 })
 export class GenreService {
 
-  private apiUrl = "http://localhost:28627/api/Genre";
+  private apiUrl = "http://localhost:39654/api/Genre";
   constructor(private http: HttpClient) { }
 
   getGenres(): Observable<Genre[]> {

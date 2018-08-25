@@ -1,9 +1,18 @@
-<span class="h5">Search Genre: </span>
-<select>
-  <option *ngFor="let g of genres">{{g.name}}</option>
-</select>
-<ul class="list-unstyled">
-  <li *ngFor = "let b of books">
-      {{b.name}}
-  </li>
-</ul>
+<div class="container-fluid">
+  <div>
+  <span class="h5">Search Genre: </span>
+  <select>
+    <option selected>Select Genre...</option>
+    <option *ngFor="let g of genres" [value]="g.id">{{g.name}}</option>
+  </select>
+</div>
+<div class="bookList">
+  <ul class="list-unstyled">
+    <li *ngFor="let b of books">
+      {{b.name}} - {{b.author}}
+    </li>
+  </ul>
+</div>
+  </div>
+
+
